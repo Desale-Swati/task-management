@@ -16,10 +16,26 @@ npm start
 
 Open [http://localhost:4200](http://localhost:4200). The app redirects to `/tasks`.
 
+## Live Demo (GitHub Pages)
+
+Live URL: [https://desale-swati.github.io/task-management/](https://desale-swati.github.io/task-management/)
+
+The app is deployed automatically via GitHub Actions whenever code is pushed to `master`.
+
+To enable GitHub Pages (one-time):
+1. Open the repo on GitHub → **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+
 ## Build
 
 ```bash
 npm run build
+```
+
+Build for GitHub Pages:
+
+```bash
+npm run build:pages
 ```
 
 ---
