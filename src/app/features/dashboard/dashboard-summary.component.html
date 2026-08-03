@@ -1,0 +1,38 @@
+<div class="row g-3 mb-4 stats-row">
+  <div class="col-6 col-xl-3">
+    <div class="stat-card stat-total">
+      <div class="stat-icon"><i class="bi bi-clipboard-data"></i></div>
+      <div class="stat-info">
+        <span class="stat-label">Total</span>
+        <span class="stat-value">{{ stats().total }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-xl-3">
+    <div class="stat-card stat-completed">
+      <div class="stat-icon"><i class="bi bi-check-circle"></i></div>
+      <div class="stat-info">
+        <span class="stat-label">Completed</span>
+        <span class="stat-value">{{ stats().completed }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-xl-3">
+    <div class="stat-card stat-progress">
+      <div class="stat-icon"><i class="bi bi-hourglass-split"></i></div>
+      <div class="stat-info">
+        <span class="stat-label">In Progress</span>
+        <span class="stat-value">{{ stats().inProgress }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-xl-3">
+    <div class="stat-card stat-overdue">
+      <div class="stat-icon"><i class="bi bi-exclamation-triangle"></i></div>
+      <div class="stat-info">
+        <span class="stat-label">Overdue</span>
+        <span class="stat-value">{{ stats().overdue }}</span>
+      </div>
+    </div>
+  </div>
+</div>

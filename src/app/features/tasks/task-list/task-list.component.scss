@@ -1,0 +1,374 @@
+.list-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    color: #6b7280;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+.btn-add {
+  border-radius: 10px;
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(79, 110, 247, 0.3);
+}
+
+/* ---- Filter Toolbar ---- */
+.filter-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.filter-search {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 0 14px;
+  height: 44px;
+
+  i {
+    color: #9ca3af;
+    font-size: 1rem;
+  }
+}
+
+.filter-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.9rem;
+  color: #1f2937;
+  height: 100%;
+
+  &::placeholder {
+    color: #9ca3af;
+  }
+}
+
+.filter-selects {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 0 12px;
+  height: 44px;
+
+  i {
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+}
+
+.filter-select {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+  cursor: pointer;
+  padding-right: 4px;
+}
+
+.filter-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+.count-badge {
+  background: #4f6ef7;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-label {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* ---- Task Card Grid ---- */
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.task-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border: 1.5px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  &.task-overdue {
+    border-color: #fecaca;
+    background: linear-gradient(to bottom, #fff5f5, #fff);
+  }
+}
+
+.task-card-top {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.task-status,
+.task-priority {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3em 0.7em;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.task-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 6px;
+  line-height: 1.35;
+}
+
+.task-desc {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0 0 12px;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.task-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+
+  i {
+    font-size: 0.85rem;
+  }
+}
+
+.overdue-tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 0.2em 0.6em;
+  border-radius: 6px;
+}
+
+.task-card-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.btn-action-edit {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #f0f4ff;
+  color: #4f6ef7;
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #e0e7ff;
+    color: #3d5ce0;
+  }
+}
+
+.btn-action-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fef2f2;
+  color: #ef4444;
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #fee2e2;
+  }
+}
+
+/* Status & priority badge colors */
+.bg-secondary {
+  background: #f3f4f6 !important;
+  color: #4b5563 !important;
+}
+
+.bg-primary {
+  background: #e0e7ff !important;
+  color: #4338ca !important;
+}
+
+.bg-success {
+  background: #d1fae5 !important;
+  color: #047857 !important;
+}
+
+.bg-success-subtle {
+  background: #d1fae5 !important;
+  color: #047857 !important;
+}
+
+.bg-warning-subtle {
+  background: #fef3c7 !important;
+  color: #b45309 !important;
+}
+
+.bg-danger-subtle {
+  background: #fee2e2 !important;
+  color: #dc2626 !important;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+  }
+
+  p {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.empty-icon {
+  width: 72px;
+  height: 72px;
+  background: #f3f4f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  i {
+    font-size: 2rem;
+    color: #9ca3af;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .filter-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-selects {
+    flex-direction: column;
+  }
+
+  .filter-count {
+    justify-content: center;
+  }
+
+  .task-grid {
+    grid-template-columns: 1fr;
+  }
+}
