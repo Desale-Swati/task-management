@@ -20,11 +20,16 @@ Open [http://localhost:4200](http://localhost:4200). The app redirects to `/task
 
 Live URL: [https://desale-swati.github.io/task-management/](https://desale-swati.github.io/task-management/)
 
-The app is deployed automatically via GitHub Actions whenever code is pushed to `master`.
+The site is published from the `gh-pages` branch.
 
-To enable GitHub Pages (one-time):
-1. Open the repo on GitHub → **Settings** → **Pages**
-2. Under **Source**, select **GitHub Actions**
+**One-time setup (required):**
+1. Open https://github.com/Desale-Swati/task-management/settings/pages
+2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
+3. Branch: **gh-pages** / folder: **/ (root)**
+4. Click **Save**
+5. Wait 1–2 minutes, then open the live URL
+
+After that, every push to `master` rebuilds and updates the live site via GitHub Actions.
 
 ## Build
 
